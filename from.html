@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img {  
+    position: absolute;
+    top: 80px;
+    top: 0px;
+    left: 0;
+    width: 1080px;
+    height: 1920px;
+    border: 3px solid #73AD21;
+    z-index: -11;
+    }
+
+    #container2 {
+        display: inline;
+    }
+    #element
+    {
+        position: relative;
+        top: 112px;
+        left: 241px;
+    }
+    .ele {
+        margin: 10px;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+</style>
+
+<body>
+    <div>
+        <form action="database.py" method="post">
+            <div id="element">
+                
+                <div class="ele">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                </div>
+                <div class="ele">
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                </div>
+                <div class="ele">
+                    <button type="submit">Login</button>
+                    <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
+                </div>
+                <div id="container2" style="background-color:#c80000">
+                    <button type="Reset" class="cancelbtn">Reset</button><br><br>
+                    <div class="psw">Forgot <a href="#">password?</a></div>
+                </div>
+            </form>
+        </div>
+        <img src="abc.jpg" alt="">
+    </div>
+</body>
+
+</html>
